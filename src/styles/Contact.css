@@ -1,0 +1,35 @@
+.contact-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-heading {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.2rem;
+  }
+
+  .contact-text {
+    font-size: 1.05rem;
+  }
+}

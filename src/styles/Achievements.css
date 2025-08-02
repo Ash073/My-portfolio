@@ -1,0 +1,45 @@
+achievements-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  color: #ffffff;
+  text-align: center;
+}
+
+achievements-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+achievements-heading {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+achievements-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  achievements-heading {
+    font-size: 2.2rem;
+  }
+
+  achievements-text {
+    font-size: 1.05rem;
+  }
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

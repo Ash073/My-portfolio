@@ -1,0 +1,32 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-right button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-right button:hover {
+  color: #1e90ff;
+}
