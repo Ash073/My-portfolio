@@ -1,35 +1,100 @@
 .contact-section {
+  background-color: black;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 60vh;
+  font-family: "Google Sans Code", monospace;
+}
+
+.contact-card {
   padding: 80px 20px;
-  background-color: #f9f9f9;
+  background-color: #000000;
   text-align: center;
+  font-family: "Sans-serif", monospace;
+  border-radius: 16px;
+  margin: 60px auto;
+  max-width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 1px solid white;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.548);
 }
 
-.contact-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.contact-heading {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+.contact-content h2 {
+  font-family: "Sans-serif", monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
   color: #222;
 }
 
-.contact-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #444;
-  text-align: justify;
+.contact-content p {
+  font-family: "Google Sans Code", monospace;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
 }
 
-@media (max-width: 768px) {
-  .contact-heading {
-    font-size: 2.2rem;
-  }
+.contact-buttons {
+  font-family: "Google Sans Code", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.contact-buttons button {
+  font-family: "Google Sans Code", monospace; 
+  width: 50px;
+}
 
-  .contact-text {
-    font-size: 1.05rem;
-  }
+.contact-btn {
+  font-family: "Google Sans Code", monospace;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  height: 20px;
+  width: 80px; 
+  margin: 6px auto;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gmail {
+  font-family: "Google Sans Code", monospace;
+  background-color: #d44638;
+}
+
+.linkedin {
+  font-family: "Google Sans Code", monospace;
+  background-color: #0077b5;
+}
+
+.github {
+  font-family: "Google Sans Code", monospace;
+  background-color: #333;
+}
+
+.icon {
+  font-size: 20px;
+  size: 20px;
 }

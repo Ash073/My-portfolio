@@ -1,0 +1,35 @@
+.vertical-footer {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  height: 2rem;
+  overflow: hidden;
+  font-size: 1rem;
+  text-align: center; 
+}
+
+.message-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  animation: scrollText 25s linear infinite;
+}
+
+.message {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes scrollText {
+  0%   { transform: translateY(0%); }
+  25%  { transform: translateY(-100%); }
+  50%  { transform: translateY(-200%); }
+  75%  { transform: translateY(-300%); }
+}

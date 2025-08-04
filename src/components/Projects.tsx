@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/Project.css';
 
 const Projects: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
-    <section id="projects" className="projects-section" data-aos="fade-up">
+    <section id="projects" className="projects-section" >
       <div className="projects-card">
         <h2 className="projects-heading">Projects</h2>
         <div className="project-list">

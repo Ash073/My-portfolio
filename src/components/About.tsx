@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import '../styles/About.css'; // External CSS for styling
 
 const About: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
-    <section id="about" className="about-section" data-aos="fade-up">
-      <div className="about-card" data-aos="fade-up">
+    <section id="about" className="about-section">
+      <div className="about-card">
         <h2>About Me</h2>
         <p>
           I'm a passionate and driven individual deeply immersed in the world of coding, development, and continuous learning.

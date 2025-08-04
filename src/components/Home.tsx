@@ -10,9 +10,10 @@ const Home: React.FC = () => {
         Your browser does not support the video tag.
       </video>
       <div className="overlay-content">
-        <h1 className="main-heading">Hi, I'm <span className="bitcount-text">Sayyed Ashif</span></h1>
-        <p className="subtitle">Full-Stack Developer | Data Analyst</p>
+        <h1 className="main-heading">Hi, I'm <span className="google-sans-code-uniquifier">Sayyed Ashif</span></h1>
+        <h1 className="fading-text">Full-Stack Developer | Data Analyst</h1>
       </div>
+      <div className="spacer"></div>
     </div>
   );
 };

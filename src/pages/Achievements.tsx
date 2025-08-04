@@ -10,7 +10,7 @@ function Achievements() {
   return (
     <div className="achievements-section">
        <img className="background-image" src={bgImage} alt="Background" />
-      <h2 className="achievements-heading">My Achievements</h2>
+      <h2 className="achievement-heading">My Achievements</h2>
       <ul>
         <li>🏅 Top 1% in College Coding Contest</li>
         <li>📜 Completed 200-Day Full-Stack + Data Science Roadmap</li>

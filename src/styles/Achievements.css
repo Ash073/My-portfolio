@@ -11,11 +11,11 @@ achievements-content {
   padding: 20px;
 }
 
-achievements-heading {
+achievement-heading {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #ac0000;
 }
 
 achievements-text {

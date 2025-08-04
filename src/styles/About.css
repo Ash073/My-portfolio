@@ -3,21 +3,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
-  min-height: 100vh;
+  background-color: #000000;
+  min-height: 20vh;
+  
 }
 
 .about-card {
+  font-family: "Google Sans Code", monospace;
   max-width: 800px;
   width: 100%;
   padding: 40px;
   border-radius: 16px;
-  background: white;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  background: rgb(0, 0, 0);
   text-align: center;
+  border: 1px solid white;
 }
 
+.about-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.548);
+}
+
+
 .about-card h2 {
+  color: white;
   font-size: 32px;
   margin-bottom: 20px;
   font-weight: bold;

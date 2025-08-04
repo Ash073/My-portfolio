@@ -1,14 +1,17 @@
 .projects-section {
+  font-family: "Google Sans Code", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
-  background: transparent;
-  min-height: 200px;
+  background: black;
+  min-height: 20px;
 }
 
 .projects-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: black;
+  color: white;
+  border: 1px solid white;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -19,7 +22,7 @@
 
 .projects-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 36px rgba(255, 255, 255, 0.515);
 }
 
 .projects-heading {
@@ -27,7 +30,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
-  color: #1c1c1c;
+  color: #939393;
 }
 
 .project-list {
@@ -46,13 +49,13 @@
 .project-item h3 {
   margin: 0 0 10px 0;
   font-size: 1.4rem;
-  color: #333;
+  color: #b9b9b9;
 }
 
 .project-item p {
   margin: 0;
   font-size: 1.1rem;
-  color: #555;
+  color: #434343;
 }
 
 @media (max-width: 768px) {

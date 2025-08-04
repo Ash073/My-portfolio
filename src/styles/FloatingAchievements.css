@@ -1,0 +1,47 @@
+.achievements-floating-section {
+    font-family: "Google Sans Code", monospace;
+  padding: 80px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.achievements-floating {
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 20px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  border: 1px solid white;
+}
+.achievements-floating:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.548);
+}
+
+.achievements-floating h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #787878;
+}
+
+.achievements-floating p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.more-link:hover {
+  color: #0056b3;
+}
