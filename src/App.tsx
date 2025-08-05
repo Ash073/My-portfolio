@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
+import SkillsCard from './components/Skills';
 import FloatingAchievements from './components/FloatingAchievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -27,13 +28,10 @@ function App() {
               <div id="home"><Home /></div>
               <div id="about"><About /></div>
               <div id="projects"><Projects /></div>
-              <div id="Achievements"><FloatingAchievements /></div>
+              <div id="skills"><SkillsCard /></div>
+              <div id="achievements"><FloatingAchievements /></div>
               <div id="contact"><Contact /></div>
-              <Footer messages={[
-                "© 2025 Sayyed Ashif",
-                "Thanks for visiting my portfolio",
-                "Feel free to connect with me!",
-              ]} />
+              <Footer />
             </>
           }
         />

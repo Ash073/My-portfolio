@@ -9,26 +9,29 @@
 }
 
 .contact-card {
-  padding: 80px 20px;
+  padding: 2rem 1rem;                  /* Smaller padding */
   background-color: #000000;
   text-align: center;
   font-family: "Sans-serif", monospace;
   border-radius: 16px;
-  margin: 60px auto;
-  max-width: 300px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;                   /* Less vertical spacing */
+  width: fit-content;                  /* Shrink to content width */
+  max-width: 90vw;                     /* Responsive */
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
   color: white;
   border: 1px solid white;
+  transition: all 0.3s ease-in-out;
 }
+
 .contact-card:hover {
   transform: translateY(-5px);
   transition: 0.3s ease-in-out;
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.548);
 }
 
-.contact-content h2 {
-  font-family: "Sans-serif", monospace;
-  font-size: 2.5rem;
+.contact-card h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 12px;
   color: #222;

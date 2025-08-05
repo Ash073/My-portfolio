@@ -7,7 +7,7 @@ function FloatingAchievements() {
             <div className="achievements-floating">
                 <h2>Achievements</h2>
                 <p>Explore the milestones and awards I've earned along my journey.</p>
-                <Link to="/achievements" className="more-link">
+                <Link to="https://www.linkedin.com/in/sayyed-ashif-b23704289/" className="more-link">
                     To Know More →
                 </Link>
             </div>

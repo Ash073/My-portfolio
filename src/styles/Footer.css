@@ -1,35 +1,38 @@
-.vertical-footer {
+.footer-container {
   background-color: #000;
   color: white;
-  padding: 10px 0;
-  position: relative;
-  height: 2rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   font-size: 1rem;
-  text-align: center; 
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.message-container {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+.rolling-text {
+  animation: slideIn 0.8s ease-in-out;
+  white-space: nowrap;
 }
 
-.message-list {
-  display: flex;
-  flex-direction: column;
-  animation: scrollText 25s linear infinite;
-}
-
-.message {
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes scrollText {
-  0%   { transform: translateY(0%); }
-  25%  { transform: translateY(-100%); }
-  50%  { transform: translateY(-200%); }
-  75%  { transform: translateY(-300%); }
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
