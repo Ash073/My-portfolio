@@ -1,22 +1,45 @@
-import React from "react";
-import styles from "../styles/Skills.module.css";
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
-import { SiMongodb, SiTypescript, SiJavascript } from "react-icons/si";
+import React from 'react';
+import styles from '../styles/Skills.module.css';
+import { 
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaLinux, FaFigma,
+} from 'react-icons/fa';
+import { SiTypescript, SiExpress, SiMongodb, SiPostgresql, SiPython} from 'react-icons/si';
 
 const SkillsCard: React.FC = () => {
   return (
-    <section className={styles.skillsSection}>
-    <div className={styles.skillsCard}>
-      <h2 className={styles.heading}>Skills</h2>
-      <div className={styles.iconsGrid}>
-        <div className={styles.skill}><FaReact /> React</div>
-        <div className={styles.skill}><SiTypescript /> TypeScript</div>
-        <div className={styles.skill}><SiJavascript /> JavaScript</div>
-        <div className={styles.skill}><FaNodeJs /> Node.js</div>
-        <div className={styles.skill}><SiMongodb /> MongoDB</div>
-        <div className={styles.skill}><FaPython /> Python</div>
-        <div className={styles.skill}><FaDatabase /> SQL</div>
-        <div className={styles.skill}><FaGithub /> GitHub</div>
+    <section className={styles['skills-section']}>
+    <div className={styles['skills-card']}>
+      <h2 className={styles['skills-title']}>Skills</h2>
+      <div className={styles['skills-grid']}>
+        <div className={styles['skills-column']}>
+          <h3 className={styles['skills-label']}>Frontend</h3>
+          <ul>
+            <li><FaHtml5 /> HTML</li>
+            <li><FaCss3Alt /> CSS</li>
+            <li><FaJs /> JavaScript</li>
+            <li><FaReact /> React</li>
+            <li><SiTypescript /> TypeScript</li>
+          </ul>
+        </div>
+        <div className={styles['skills-column']}>
+          <h3 className={styles['skills-label']}>Backend</h3>
+          <ul>
+            <li><FaNodeJs /> Node.js</li>
+            <li><SiExpress /> Express</li>
+            <li><SiMongodb /> MongoDB</li>
+            <li><SiPostgresql /> PostgreSQL</li>
+            <li><SiPython /> Python</li>
+          </ul>
+        </div>
+        <div className={styles['skills-column']}>
+          <h3 className={styles['skills-label']}>Other</h3>
+          <ul>
+            <li><FaGitAlt /> Git & GitHub</li>
+            <li><FaFigma /> Figma</li>
+            <li><FaDocker /> Docker</li>
+            <li><FaLinux /> Linux</li>
+          </ul>
+        </div>
       </div>
     </div>
     </section>
@@ -24,3 +47,4 @@ const SkillsCard: React.FC = () => {
 };
 
 export default SkillsCard;
+

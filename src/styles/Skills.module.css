@@ -1,50 +1,90 @@
-.skillsSection {
-  padding: 4rem 2rem;
+.skills-section {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+.skills-card {
+  font-family: "Google Sans Code", monospace;
+  max-width: 300px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
   background: #000;
-  border-color: white;
-}
-
-.skillsCard {
-  background-color: #000000;
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 2rem 0;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid white;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
 }
 
-.skillsCard:hover {
+.skills-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.485);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.548);
 }
 
-.heading {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #939393;
+.skills-title {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
 
-.iconsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
-.skill {
+.skills-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1rem;
-  padding: 0.8rem;
-  background: #000000;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+  min-width: 180px;
 }
 
-.skill svg {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.skills-label {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+.skills-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-column li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .skills-section,
+  .skills-card {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .skills-title {
+    font-size: 26px;
+  }
+
+  .skills-column li {
+    font-size: 16px;
+  }
 }

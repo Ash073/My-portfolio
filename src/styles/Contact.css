@@ -1,17 +1,21 @@
 .contact-section {
   background-color: black;
-  padding: 60px 0;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   max-height: 60vh;
   font-family: "Google Sans Code", monospace;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 1200px;
 }
 
 .contact-card {
   padding: 2rem 1rem;                  /* Smaller padding */
   background-color: #000000;
   text-align: center;
+  max-width: 500px;                  
   font-family: "Sans-serif", monospace;
   border-radius: 16px;
   margin: 40px auto;                   /* Less vertical spacing */
@@ -100,4 +104,27 @@
 .icon {
   font-size: 20px;
   size: 20px;
+}
+@media (max-width: 768px) {
+  .contact-section,
+  .contact-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .contact-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 20px 12px;
+  }
+
+  .contact-card {
+    padding: 16px;
+    border-radius: 8px;
+  }
 }
