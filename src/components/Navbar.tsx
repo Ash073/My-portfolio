@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
-  const navigate = useNavigate();
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -21,7 +19,7 @@ const Navbar: React.FC = () => {
         <button onClick={() => scrollTo('about')}>About</button>
         <button onClick={() => scrollTo('projects')}>Projects</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
-        <button onClick={() => navigate('/achievements')}>Achievements</button>
+        <button onClick={() => scrollTo('achievements')}>Achievements</button>
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-//import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -8,6 +8,8 @@ import FloatingAchievements from './components/FloatingAchievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Achievements from './pages/Achievements';
+import SplashCursor from './components/SplashCursor';
+import TextType from './components/TextType';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -24,7 +26,7 @@ function App() {
           path="/"
           element={
             <>
-              {/* <Navbar /> */}
+              <Navbar />
               <div id="home"><Home /></div>
               <div id="about"><About /></div>
               <div id="projects"><Projects /></div>
@@ -32,6 +34,7 @@ function App() {
               <div id="achievements"><FloatingAchievements /></div>
               <div id="contact"><Contact /></div>
               <Footer />
+              <SplashCursor />
             </>
           }
         />

@@ -16,6 +16,12 @@
   font-weight: bold;
   cursor: pointer;
 }
+.nav-right{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 4rem;
+}
 
 .nav-right button {
   background: none;

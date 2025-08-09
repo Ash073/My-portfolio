@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1500px;
 }
 
 .animated-background {
@@ -25,6 +26,7 @@
   z-index: 1;
   text-align: center;
   color: white;
+  gap: 0.25rem;
 }
 
 @keyframes gradientFade {
@@ -42,13 +44,16 @@
 .main-heading {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
-  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  gap: 0;
 }
 
 .fading-text {
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   position: relative;
+  margin-top: 1.5rem;
   background: linear-gradient(135deg,
     white 0%,
     white 40%,
@@ -78,4 +83,13 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+.text-type {
+  font-family: "Oswald", sans-serif;
+  height: 0;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 100px;
+  font-style: normal;
+  margin-top: 0;
 }

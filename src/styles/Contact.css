@@ -8,17 +8,17 @@
   font-family: "Google Sans Code", monospace;
   overflow-x: hidden;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 .contact-card {
-  padding: 2rem 1rem;                  /* Smaller padding */
+  padding: 1rem;                  /* Smaller padding */
   background-color: #000000;
   text-align: center;
   max-width: 500px;                  
   font-family: "Sans-serif", monospace;
   border-radius: 16px;
-  margin: 40px auto;                   /* Less vertical spacing */
+  margin: 0 auto;                  /* Less vertical spacing */
   width: fit-content;                  /* Shrink to content width */
   max-width: 90vw;                     /* Responsive */
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
@@ -108,8 +108,10 @@
 @media (max-width: 768px) {
   .contact-section,
   .contact-card {
+    width: 90%;
     padding-left: 20px;
     padding-right: 20px;
+    padding: 1rem;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -124,7 +126,8 @@
   }
 
   .contact-card {
-    padding: 16px;
+    padding: 1.5rem 1rem;
+    width: 95%;
     border-radius: 8px;
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
+import TextType from './TextType';
 
 const Home: React.FC = () => {
   return (
@@ -10,8 +11,16 @@ const Home: React.FC = () => {
           @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
         </style>
         <h1 className="main-heading">
-          Hi, I'm <span className="oswald-text">Sayyed Ashif</span>
+          Hi, I'm
         </h1>
+        <TextType className='text-type'
+                text={["Sayyed Ashif_"]}
+                typingSpeed={85}
+                pauseDuration={100}
+                showCursor={true}
+                cursorCharacter="|"
+        />
+
         <h1 className="fading-text">Full-Stack Developer | Data Analyst</h1>
       </div>
     </div>
