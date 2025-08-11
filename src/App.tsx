@@ -7,9 +7,7 @@ import SkillsCard from './components/Skills';
 import FloatingAchievements from './components/FloatingAchievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Achievements from './pages/Achievements';
-import SplashCursor from './components/SplashCursor';
-import TextType from './components/TextType';
+//import SplashCursor from './components/SplashCursor';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -34,11 +32,10 @@ function App() {
               <div id="achievements"><FloatingAchievements /></div>
               <div id="contact"><Contact /></div>
               <Footer />
-              <SplashCursor />
+              {/* <SplashCursor /> */}
             </>
           }
         />
-        <Route path="/achievements" element={<Achievements />} />
       </Routes>
     </>
   );

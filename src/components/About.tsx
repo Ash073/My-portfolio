@@ -1,10 +1,26 @@
 import React from 'react';
 import '../styles/About.css'; // External CSS for styling
+import ProfileCard from './ProfileCard';
+import profileImg from '../assets/avataar.png'; 
 
 const About: React.FC = () => {
 
   return (
     <section id="about" className="about-section">
+      <ProfileCard
+        name="Sayyed Ashif"
+        title="Data Analyst"
+        handle="sayyedashif"
+        status="Online"
+        contactText="Contact Me"
+        avatarUrl={profileImg}
+        miniAvatarUrl={profileImg}
+        showBehindGradient={true}
+        showUserInfo={true}
+        enableTilt={true}
+        enableMobileTilt={false}
+        onContactClick={() => console.log('Contact clicked')}
+      />
       <div className="about-card">
         <h2>About Me</h2>
         <p>

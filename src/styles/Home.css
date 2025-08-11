@@ -15,52 +15,65 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
+  background: black;
   background-size: 400% 400%;
-  animation: gradientFade 4s ease infinite alternate;
   z-index: 0;
-}
-/* Overlay text content */
-.overlay-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: white;
-  gap: 0.25rem;
 }
 
 @keyframes gradientFade {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.orb-wrapper {
+  position: relative;
+  width: 600px; /* orb size */
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: none; /* allow text to overflow orb */
 }
 
 .main-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Oswald", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  gap: 0;
+  margin: 0;
+  margin-bottom: 5px; /* brings closer to name */
+  white-space: nowrap;
+}
+
+.name-text {
+  font-family: "Oswald", sans-serif !important;
+  font-size: 3.5rem !important; /* large name */
+  font-weight: 500 !important;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .fading-text {
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   position: relative;
-  margin-top: 1.5rem;
-  background: linear-gradient(135deg,
+  margin-top: 1rem;
+  background: linear-gradient(
+    135deg,
     white 0%,
     white 40%,
     black 50%,
     white 60%,
     white 100%
-   );
+  );
   background-size: 200% 200%;
   color: #fff;
   background-clip: text;
@@ -70,26 +83,12 @@
 }
 
 @keyframes diagonalShine {
-  0% {
-    background-position: 200% 200%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+  0% { background-position: 200% 200%; }
+  100% { background-position: 0% 0%; }
 }
-
 .oswald-text {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-.text-type {
-  font-family: "Oswald", sans-serif;
-  height: 0;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 100px;
-  font-style: normal;
-  margin-top: 0;
 }
