@@ -1,4 +1,4 @@
-import { FaReact, FaPython, FaCss3, FaJs, FaDatabase, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaPython, FaJs, FaDatabase, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import Carousel, { type CarouselItem } from "./Carousel";
 import styles from "../styles/Skills.module.css";
 import { GrMysql } from "react-icons/gr";

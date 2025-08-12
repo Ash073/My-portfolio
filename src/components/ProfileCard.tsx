@@ -21,14 +21,6 @@ const clamp = (value: number, min: number = 0, max: number = 100): number =>
 const round = (value: number, precision: number = 3) =>
   parseFloat(value.toFixed(precision));
 
-interface AdjustParams {
-    value: number;
-    fromMin: number;
-    fromMax: number;
-    toMin: number;
-    toMax: number;
-}
-
 const adjust = (
     value: number,
     fromMin: number,

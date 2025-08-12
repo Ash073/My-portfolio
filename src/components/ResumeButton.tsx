@@ -1,5 +1,4 @@
 // ResumeButton.jsx
-import React from "react";
 import "../styles/ResumeButton.css";
 
 const ResumeButton = () => {

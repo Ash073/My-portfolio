@@ -50,22 +50,6 @@ const GooeyNav = ({
     rotate: number;
   }
 
-  interface GooeyNavItem {
-    label: string;
-    href: string;
-  }
-
-  interface GooeyNavProps {
-    items: GooeyNavItem[];
-    animationTime?: number;
-    particleCount?: number;
-    particleDistances?: [number, number];
-    particleR?: number;
-    timeVariance?: number;
-    colors?: number[];
-    initialActiveIndex?: number;
-  }
-
   const createParticle = (
     i: number,
     t: number,

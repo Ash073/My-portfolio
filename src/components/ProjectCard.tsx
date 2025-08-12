@@ -14,8 +14,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   image,
-  githubLink,
-  liveDemoLink,
 }) => {
   return (
     <section className={styles.projectCard}>
