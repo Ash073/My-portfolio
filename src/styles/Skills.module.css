@@ -4,6 +4,10 @@
   background-color: black;
   color: white;
 }
+.skills-title {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+}
 
 .skills-cards {
   display: flex;

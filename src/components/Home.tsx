@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import TextType from './TextType';
 import Orb from './Orb.tsx';
+import ResumeButton from './ResumeButton';
 
 const Home: React.FC = () => {
   return (
@@ -16,9 +17,11 @@ const Home: React.FC = () => {
           hue={0}
           forceHoverState={false}
         />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+
+        {/* Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
 
         {/* Overlay text */}
         <div className="orb-text">
@@ -31,6 +34,7 @@ const Home: React.FC = () => {
             cursorCharacter="|"
           />
           <h1 className="fading-text">Full-Stack Developer | Data Analyst</h1>
+          <ResumeButton />
         </div>
       </div>
     </div>
@@ -38,3 +42,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+

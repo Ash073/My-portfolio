@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/About.css'; // External CSS for styling
 import ProfileCard from './ProfileCard';
-import profileImg from '../assets/avataar.png'; 
+import profileImg from '../assets/avatar.png'; 
 
 const About: React.FC = () => {
 
@@ -23,6 +23,9 @@ const About: React.FC = () => {
       />
       <div className="about-card">
         <h2>About Me</h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
         <p>
           I'm a passionate and driven individual deeply immersed in the world of coding, development, and continuous learning.
           Whether it's solving algorithmic challenges, contributing to open-source projects, or building end-to-end applications,
