@@ -1,0 +1,185 @@
+.gooey-nav-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: fit-content;
+  min-width: fit-content;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Reset any inherited styles */
+  box-sizing: border-box;
+}
+
+.gooey-nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* Reset any inherited styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gooey-nav-container nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-shadow: 0 1px 1px hsl(205deg 30% 10% / 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  /* Reset any inherited styles */
+  font-size: 0; /* Eliminate whitespace issues */
+}
+
+.gooey-nav-container nav ul li {
+  border-radius: 100vw;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0.5px 1.5px transparent;
+  color: white;
+  background-color: transparent;
+  padding: 0.3em 0.6em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 0;
+  text-align: center;
+  flex-shrink: 0;
+  /* Reset any inherited styles */
+  box-sizing: border-box;
+  font-size: 1rem; /* Restore font size */
+}
+
+.gooey-nav-container nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  /* Reset any inherited styles */
+  box-sizing: border-box;
+}
+
+.gooey-nav-container nav ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gooey-nav-container nav ul li a:hover {
+  color: #C0C0C0;
+  text-shadow: 0 0 8px rgba(192, 192, 192, 0.7);
+}
+
+.gooey-nav-container nav ul li:focus-within:has(:focus-visible) {
+  box-shadow: 0 0 0.5px 1.5px white;
+}
+
+.gooey-nav-container nav ul li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #C0C0C0, #FFFFFF);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.gooey-nav-container nav ul li.active {
+  color: black;
+  text-shadow: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
+}
+
+.gooey-nav-container nav ul li.active a {
+  color: black;
+  font-weight: 600;
+}
+
+.gooey-nav-container nav ul li.active::after {
+  opacity: 0.3;
+  transform: scale(1);
+}
+
+.gooey-nav-container .effect.filter {
+  filter: blur(7px) contrast(100) blur(0);
+  mix-blend-mode: lighten;
+}
+
+.gooey-nav-container .effect.filter::before {
+  content: "";
+  position: absolute;
+  inset: -75px;
+  z-index: -2;
+  background: transparent;
+}
+
+.gooey-nav-container .effect.filter::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #C0C0C0, #FFFFFF);
+  transform: scale(0);
+  opacity: 0;
+  z-index: -1;
+  border-radius: 100vw;
+  filter: blur(5px);
+}
+
+.particle,
+.point {
+  display: block;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  transform-origin: center;
+}
+
+.particle {
+  --time: 5s;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  animation: particle calc(var(--time)) ease 1 -350ms;
+  filter: blur(2px);
+}
+
+.point {
+  background: var(--color);
+  opacity: 1;
+  animation: point calc(var(--time)) ease 1 -350ms;
+  box-shadow: 0 0 10px var(--color);
+}

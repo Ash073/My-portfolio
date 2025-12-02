@@ -1,0 +1,67 @@
+.footer-container {
+  background-color: #000000;
+  color: white;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 10; /* Ensure it's above the background animation */
+}
+
+.rolling-text {
+  animation: slideIn 0.8s ease-in-out;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    min-height: 50px;
+    padding: 8px 0;
+  }
+  
+  .rolling-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    min-height: 45px;
+    padding: 6px 0;
+  }
+  
+  .rolling-text {
+    font-size: 1rem;
+  }
+}

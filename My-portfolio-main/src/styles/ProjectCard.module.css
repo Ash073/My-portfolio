@@ -1,0 +1,224 @@
+/* Projects section background */
+.projectsSection {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: #000000;
+  padding: 40px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 10; /* Ensure it's above the background animation */
+}
+
+.heading {
+  color: #C0C0C0; /* Changed from gold to silver */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Project grid layout */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card container */
+.projectcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 16px;
+  margin: 20px auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  height: 70px;
+  min-height: 350px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(156, 156, 156, 0.6);
+  border-color: #C0C0C0; /* Changed from gold to silver */
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #C0C0C0; /* Changed from gold to silver */
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+/* Icon container */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  width: 100%;
+  padding: 0 2px;
+  margin-top: 10px;
+}
+
+.icon {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon:hover {
+  color: #C0C0C0; /* Changed from gold to silver */
+  background: rgba(192, 192, 192, 0.1); /* Silver with transparency */
+  transform: translateY(-3px);
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .projectGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  .heading {
+    font-size: 32px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .heading {
+    font-size: 30px;
+  }
+  
+  .card {
+    min-height: 320px;
+  }
+  
+  .image {
+    height: 180px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsSection {
+    padding: 30px 0;
+  }
+  
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    min-height: 300px;
+  }
+  
+  .image {
+    height: 160px;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+  }
+  
+  .links {
+    gap: 500px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+  }
+}
