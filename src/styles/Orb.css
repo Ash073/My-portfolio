@@ -4,3 +4,33 @@
   width: 100%;
   height: 100%;
 }
+
+.orb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb-fallback-gradient {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(156, 67, 254, 0.8) 0%,
+    rgba(76, 194, 233, 0.6) 40%,
+    rgba(16, 20, 153, 0.8) 100%
+  );
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}

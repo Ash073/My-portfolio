@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Renderer, Program, Mesh, Triangle, Vec3 } from "ogl";
 
 import '../styles/Orb.css';
@@ -17,6 +17,7 @@ export default function Orb({
   forceHoverState = false,
 }: OrbProps) {
   const ctnDom = useRef<HTMLDivElement>(null);
+  const [webglSupported, setWebglSupported] = useState(true);
 
   const vert = /* glsl */ `
     precision highp float;
@@ -181,7 +182,20 @@ export default function Orb({
     const container = ctnDom.current;
     if (!container) return;
 
-    const renderer = new Renderer({ alpha: true, premultipliedAlpha: false });
+    const canvas = document.createElement('canvas');
+    const testGl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (!testGl) {
+      setWebglSupported(false);
+      return;
+    }
+
+    let renderer: Renderer;
+    try {
+      renderer = new Renderer({ alpha: true, premultipliedAlpha: false });
+    } catch {
+      setWebglSupported(false);
+      return;
+    }
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
     container.appendChild(gl.canvas);
@@ -286,6 +300,14 @@ export default function Orb({
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
   }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
+
+  if (!webglSupported) {
+    return (
+      <div className="orb-container orb-fallback">
+        <div className="orb-fallback-gradient" />
+      </div>
+    );
+  }
 
   return <div ref={ctnDom} className="orb-container" />;
 }
