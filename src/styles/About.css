@@ -1,0 +1,49 @@
+.about-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  min-height: 20vh;
+  
+}
+
+.about-card {
+  font-family: "Caveat", cursive;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  font-size: 50px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.about-card h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+.about-card p {
+  font-size: 23px;
+  line-height: 1.6;
+  color: #d2d2d2ea;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card h2 {
+    font-size: 26px;
+  }
+
+  .about-card p {
+    font-size: 16px;
+  }
+}

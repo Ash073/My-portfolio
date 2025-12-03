@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #1e1e1e;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.home {
+  background: #e1f5fe;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e1e;
+  color: white;
+}

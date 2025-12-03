@@ -1,0 +1,38 @@
+.footer-container {
+  background-color: #000;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.rolling-text {
+  animation: slideIn 0.8s ease-in-out;
+  white-space: nowrap;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

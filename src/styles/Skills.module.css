@@ -1,0 +1,40 @@
+.skills-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+}
+.skills-title {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.skills-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap; /* Keep them side by side */
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 300px; 
+  max-width: 400px;/* Make sure they don’t shrink too much */
+}
+
+.skills-category h3 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.skills-carousel {
+  display: flex; /* This ensures carousel itself doesn't force full width */
+  justify-content: center;
+  width: 100%;
+  max-width: 400px; /* Keep card widths consistent */
+}
+
